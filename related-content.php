@@ -122,8 +122,9 @@
 		}
 
 		$args = array(
-			'filter[cat]' => implode( ",", $cat_ids ),
-			'filter[posts_per_page]' => 5
+			'filter[cat]' 				=> implode( ",", $cat_ids ),
+			'filter[posts_per_page]' 	=> 5,
+			'filter[orderby]'			=> 'rand'
 		);
 
 		$url = add_query_arg( $args, rest_url( 'wp/v2/posts' ) );
