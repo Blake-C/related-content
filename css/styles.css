@@ -1,0 +1,32 @@
+.related-post{
+	background-color: rgb(190, 240, 255);
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.related-post a.related-post-link {
+    display: block;
+   	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.related-post a.related-post-link:hover {
+	padding-left: 20px;
+}
+
+.related-post h1 {
+	font-size: 1.2rem;
+	margin: 0 0 5px 0;
+	line-height: 1.4;
+}
+
+@keyframes spinner {
+	to { transform: rotate(360deg); }
+}
+
+.ajax-loader img{
+	-webkit-animation: spinner .6s linear infinite;
+	animation: spinner .6s linear infinite;
+    margin: 15px auto;
+    display: block;
+}
